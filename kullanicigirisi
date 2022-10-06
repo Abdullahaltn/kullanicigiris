@@ -1,0 +1,52 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+
+        String pas,kullaniciAdi,sifresifirlamasecim;
+
+        Scanner girdi=new Scanner(System.in);
+
+        System.out.println("lütfen kullanıcı adı ve şifrenizi giriniz.");
+        kullaniciAdi=girdi.nextLine();
+        System.out.println("şifrenizi giriniz.");
+        pas= girdi.nextLine();
+
+        if (kullaniciAdi.equals("abdullahaltn") && (pas.equals("apocan132A"))   ){
+
+
+            System.out.println("tebrikler giriş yaptınız");
+
+
+
+        }else {
+
+            System.out.println("kullanıcı adı veya şifreniz uyuşmadı. sıfırlamak için 1'e tıklayın");
+            sifresifirlamasecim=girdi.nextLine();
+            if (sifresifirlamasecim.equals("1")){
+
+                System.out.println("lütfen yeni şifrenizi giriniz.");
+                pas=girdi.nextLine();
+                System.out.println("tebrikler şifreniz oluşturuldu. \n yeni şifreniz  "+pas);
+            }
+
+        }
+
+
+
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+    }
